@@ -1,0 +1,55 @@
+body {
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  padding: 4rem;
+  /* background-color: hsl(270, 100%, 15%); */
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 1.8rem;
+  color: black;
+}
+.container p {
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container img {
+  width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.container a {
+  color: white;
+  display: inline-block;
+  transition: all 0.26s ease-in-out;
+  /* background-color: hsl(250, 59%, 49%); */
+  background-image: linear-gradient(90deg, rgb(248, 22, 131), rgb(0, 89, 255));
+  padding: 0.3rem 2.5rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+.container a:hover {
+  /* background-color: hsl(250, 67%, 57%); */
+  opacity: 0.9;
+}
+.container .button-icon {
+  font-size: 1.4rem;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+  margin-left: 0.3rem;
+  margin-top: 0.22rem;
+}
+.container a:hover .button-icon {
+  transform: translateX(0.25rem);
+}
