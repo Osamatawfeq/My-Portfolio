@@ -284,7 +284,7 @@ img {
 }
 
 .home__content {
-  grid-template-columns: 0.5fr 3fr; /* 0.5fr 3fr - before */
+  grid-template-columns: 1fr 3fr; /* 0.5fr 3fr - before */
   padding-top: 3.5rem;
   align-items: center;
 }
@@ -1060,7 +1060,7 @@ img {
   }
 
   .home__content {
-    grid-template-columns: 0.25fr 3fr;
+    grid-template-columns: 0.8fr 3fr;
   }
   .home__blob {
     width: 180px;
