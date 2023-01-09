@@ -207,49 +207,260 @@ themeButton.addEventListener("click", () => {
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 // Common reveal options to create reveal animation
-// ScrollReveal({
-//   reset: true,
-//   distance: "60px",
-//   duration: 2500,
-//   delay: 100,
-// });
+ScrollReveal({
+  reset: false,
+  distance: "60px",
+  duration: 2500,
+  delay: 100,
+});
 
-// // Target elements, and specify options to create reveal animations .skills .section__title, .skills .section__subtitle, .services .section__title, .services .section__subtitle, .testimonial .section__title, .testimonial .section__subtitle,
-// // LEFT DIRECTION //
-// ScrollReveal().reveal(
-//   ".home .home__data h1, .section__title, .section__subtitle, .about__img, .project__title, .project__description, .project__button, .home__data h3, .home__data p, .about__data .about__buttons",
-//   { delay: 500, origin: "left" }
-// );
-// ScrollReveal().reveal(
-//   ".home .home__social .home__social-icon, .contact__information, .qualification__tabs div, .project__img",
-//   {
-//     delay: 600,
-//     origin: "left",
-//     interval: 200,
-//   }
-// );
-// // BUTTOM DIRECTION //
-// ScrollReveal().reveal(
-//   ".home__data .home__button, .home__scroll, .qualification__active .qualification__rounder, .qualification__active .qualification__line, .skills__content, .swiper-wrapper, .swiper-container-horizontal, .about__description, .swiper-button-next, .swiper-button-prev, .home__img, .contact__button",
-//   {
-//     delay: 600,
-//     origin: "bottom",
-//   }
-// );
-// ScrollReveal().reveal(".about__info div, .contact__content", {
-//   delay: 600,
-//   origin: "bottom",
-//   interval: 200,
-// });
-// // TOP DIRECTION //
-// ScrollReveal().reveal(
-//   ".services__cards, .qualification__active .qualification__data .qualification__title, .qualification__active .qualification__data .qualification__subtitle, .qualification__active .qualification__data .qualification__calendar",
-//   {
-//     delay: 600,
-//     origin: "top",
-//     interval: 200,
-//   }
-// );
+// Target elements, and specify options to create reveal animations .skills .section__title, .skills .section__subtitle, .services .section__title, .services .section__subtitle, .testimonial .section__title, .testimonial .section__subtitle,
+// HOME //
+// RIGHT //
+ScrollReveal().reveal(".home__description", {
+  delay: 600,
+  origin: "right",
+});
+// BUTTOM //
+ScrollReveal().reveal(
+  ".home__img, .home__button, .home__scroll-button, .home__scroll",
+  {
+    delay: 700,
+    origin: "bottom",
+  }
+);
+// LEFT //
+ScrollReveal().reveal(".home__title, .home__subtitle", {
+  delay: 500,
+  origin: "left",
+});
+ScrollReveal().reveal(".home__social a", {
+  delay: 700,
+  origin: "left",
+  interval: 200,
+});
+
+// ABOUT //
+// RIGHT //
+ScrollReveal().reveal(".about .section__title, .about .section__subtitle", {
+  delay: 500,
+  origin: "right",
+});
+ScrollReveal().reveal(".about__description", {
+  delay: 600,
+  origin: "right",
+});
+ScrollReveal().reveal(".about__info > div", {
+  delay: 700,
+  origin: "right",
+  interval: 200,
+});
+// BUTTOM //
+ScrollReveal().reveal(".about__buttons", {
+  delay: 600,
+  origin: "bottom",
+});
+// LEFT //
+ScrollReveal().reveal(".about__img", {
+  delay: 700,
+  origin: "left",
+});
+
+// SKILLS //
+// BUTTOM //
+ScrollReveal().reveal(".skills__container .skills__content", {
+  delay: 600,
+  origin: "bottom",
+  interval: 200,
+});
+// LEFT //
+ScrollReveal().reveal(".skills .section__title, .skills .section__subtitle", {
+  delay: 500,
+  origin: "left",
+});
+
+// QUALIFICATION //
+// TOP //
+ScrollReveal().reveal(
+  ".qualification__button, .qualification__active .qualification__rounder, .qualification__active .qualification__line",
+  {
+    delay: 600,
+    origin: "top",
+    interval: 200,
+  }
+);
+// RIGHT //
+ScrollReveal().reveal(
+  ".qualification .section__title, .qualification .section__subtitle",
+  {
+    delay: 500,
+    origin: "right",
+  }
+);
+ScrollReveal().reveal(
+  ".qualification__active .qualification__data:nth-child(even) .qualification__title, .qualification__active .qualification__data:nth-child(even) .qualification__subtitle, .qualification__active .qualification__data:nth-child(even) .qualification__calendar",
+  {
+    delay: 700,
+    origin: "right",
+    interval: 200,
+  }
+);
+// LEFT //
+ScrollReveal().reveal(
+  ".qualification__active .qualification__data:nth-child(odd) .qualification__title, .qualification__active .qualification__data:nth-child(odd) .qualification__subtitle, .qualification__active .qualification__data:nth-child(odd) .qualification__calendar",
+  {
+    delay: 700,
+    origin: "left",
+    interval: 200,
+  }
+);
+
+// SERVICES //
+// TOP //
+ScrollReveal().reveal(".services__cards", {
+  delay: 600,
+  origin: "top",
+  interval: 200,
+});
+// LEFT //
+ScrollReveal().reveal(
+  ".services .section__title, .services .section__subtitle",
+  {
+    delay: 500,
+    origin: "left",
+  }
+);
+
+// PORTFOLIO //
+// RIGHT //
+ScrollReveal().reveal(
+  ".portfolio .section__title, .portfolio .section__subtitle",
+  {
+    delay: 500,
+    origin: "right",
+  }
+);
+ScrollReveal().reveal(
+  ".portfolio__title, .portfolio__description-1, .portfolio__button-1, .swiper-button-next",
+  {
+    delay: 600,
+    origin: "right",
+    interval: 200,
+  }
+);
+ScrollReveal().reveal(".swiper-button-next", {
+  delay: 1000,
+  origin: "right",
+  interval: 200,
+});
+// BUTTOM //
+ScrollReveal().reveal(".swiper-pagination", {
+  delay: 1000,
+  origin: "bottom",
+});
+// LEFT //
+ScrollReveal().reveal(".portfolio__img, .swiper-button-prev", {
+  delay: 600,
+  origin: "left",
+  interval: 70,
+});
+
+// PROJECT IN MIND //
+// TOP //
+ScrollReveal().reveal("", {
+  delay: 600,
+  origin: "top",
+  interval: 200,
+});
+// RIGHT //
+ScrollReveal().reveal(".project__img", {
+  delay: 600,
+  origin: "right",
+});
+// BUTTOM //
+ScrollReveal().reveal("", {
+  delay: 1000,
+  origin: "bottom",
+});
+// LEFT //
+ScrollReveal().reveal(
+  ".project__title, .project__description, .project__button",
+  {
+    delay: 500,
+    origin: "left",
+    interval: 200,
+  }
+);
+
+// TESTIMONIALS //
+// RIGHT //
+ScrollReveal().reveal(".testimonial__container", {
+  delay: 600,
+  origin: "right",
+  interval: 200,
+});
+// LEFT //
+ScrollReveal().reveal(
+  ".testimonial .section__title, .testimonial .section__subtitle",
+  {
+    delay: 500,
+    origin: "left",
+  }
+);
+
+// CONTACT ME //
+// TOP //
+ScrollReveal().reveal("", {
+  delay: 600,
+  origin: "top",
+  interval: 200,
+});
+// RIGHT //
+ScrollReveal().reveal(".contact .section__title, .contact .section__subtitle", {
+  delay: 500,
+  origin: "right",
+});
+ScrollReveal().reveal(".contact__content", {
+  delay: 700,
+  origin: "right",
+  interval: 200,
+});
+// BUTTOM //
+ScrollReveal().reveal(".contact__button", {
+  delay: 1200,
+  origin: "bottom",
+});
+// LEFT //
+ScrollReveal().reveal(".contact__information", {
+  delay: 600,
+  origin: "left",
+  interval: 250,
+});
+
+//  FOOTER //
+// RIGHT //
+ScrollReveal().reveal(".footer__links .footer__link", {
+  delay: 600,
+  origin: "right",
+  interval: 250,
+});
+// BUTTOM //
+ScrollReveal().reveal(".footer__social", {
+  delay: 600,
+  origin: "bottom",
+  interval: 250,
+});
+ScrollReveal().reveal(".footer__copy", {
+  delay: 700,
+  origin: "bottom",
+});
+// LEFT //
+ScrollReveal().reveal(".footer__title, .footer__subtitle", {
+  delay: 500,
+  origin: "left",
+  interval: 250,
+});
+/*==================== SCROLL REVEAL ANIMATION ====================*/
 
 /*==================== CONTACT FROM HANDLER ====================*/
 // function sendEmail() {

@@ -165,6 +165,10 @@ img {
   white-space: nowrap;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 780px;
@@ -310,7 +314,7 @@ img {
 }
 
 .home__blob-img {
-  width: 210px;
+  width: 200px;
 }
 
 .home__data {
@@ -964,6 +968,7 @@ img {
 
 .footer__subtitle {
   font-size: var(--small-font-size);
+  display: block;
 }
 
 .footer__links {
@@ -976,9 +981,14 @@ img {
   color: var(--first-color-lighter);
 }
 
+.footer__link {
+  display: block;
+}
+
 .footer__social {
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
+  display: inline-block;
 }
 
 :is(.footer__social, .footer__link):hover {
